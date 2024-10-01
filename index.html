@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.ibb.co/K00ch0m/CEOITBOX-Logo-Small.png" type="image/x-icon">
+    <title>CBXIT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poor Story', system-ui;
+            user-select: none;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent {
+            min-height: 80vh;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        @media screen and (width<700px) {
+            .parent{
+                width: 95%;
+            }
+        }
+        .content {
+            text-align: center;
+            color: #2d2d2d;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            color: red;
+            font-size: 40px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            color: #3a3a3a;
+            font-size: 24px;
+        }
+
+        .content img {
+            max-width: 350px;
+            width: 65%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498DB;
+            /* Blue color for the button */
+            color: #fff;
+            /* White text color for the button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .content button:hover {
+            background-color: #2980B9;
+            /* Darker blue color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="content">
+            <h2>Link does not exist</h2>
+            <p>The short URL you clicked was deleted or never existed. Check that you entered or copy-pasted the link
+                correctly!</p>
+            <img draggable="false" src="https://cbxit.in/image.jpg" alt="Placeholder Image">
+            <p>Want your own branded short link domain.</p>
+            <a href="https://cbxit.in">
+                <button>Get Started</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
